@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+
+
+</head>
+
+<body>
+  <div class="centerContent">
+
+
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="img/Logo Icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Shardible
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">NFT <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Label</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Community
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sales</a>
+              <a class="dropdown-item" href="#">Launching soon</a>
+              <a class="dropdown-item" href="#">Auction</a>
+            </div>
+          </li>
+        </ul>
+        <button class="btn marketplace" type="button">Marketplace</button>
+      </div>
+    </nav>
+    <div class="float">
+
+
+      <div class="headertext">
+        <div>
+
+          <div class="heading">
+            <h1 class="eText">Experience a new world of NFTs with <span style="color:#00C6C2;font-size:15px; font-size:40px; font-weight:600">Shardible </span></h1>
+            <p class="eText">Whether you're looking to sell or buy, our NFT marketplace has
+              something for everyone. Browse through our selection of NFTs and
+              start building your collection today!</p>
+          </div>
+        </div>
+
+        <form class="eText">
+          <div class="form-group ">
+
+            <div class="main-input"><input type="email" class="form-control">
+              <button type="submit" class="btn main-button">Join whitelist</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="headerimg">
+        <img src="img/Rectangle 26.png" alt="">
+        <div class="Fiatbroke">
+          <p>Alternate pathways</p>
+          <div class="afterimg">
+            <img class="desc" src="img/Ellipse 6.png" alt="">
+            <p class="desc" style="color:#9D9DE7">Fiatbroke</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- timer -->
+
+    <div class="timer">
+      <h3 class="timerheading">Shardible s Marketplace Launches in</h3>
+
+      <div class="counter">
+
+        <!-- <img class="ring" src="img\Group 17.png"> -->
+        <div>
+          <div class="timercontainer">
+            <p id="days"></p>
+          </div>
+          <p>Days</p>
+        </div>
+        <div>
+          <div class="timercontainer">
+            <p id="hours"></p>
+          </div>
+          <p>Hours</p>
+        </div>
+        <div>
+          <div class="timercontainer">
+            <p id="minutes"></p>
+          </div>
+          <p>Minutes</p>
+        </div>
+        <div>
+          <div class="timercontainer">
+            <p id="seconds"></p>
+          </div>
+          <p>Seconds</p>
+        </div>
+
+      </div>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("march 9, 2023 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("days").innerHTML = days + "&nbsp; &nbsp;";
+          document.getElementById("hours").innerHTML = hours + "&nbsp; &nbsp;"
+          document.getElementById("minutes").innerHTML = minutes + "&nbsp; &nbsp;"
+          document.getElementById("seconds").innerHTML = seconds + "&nbsp; &nbsp;";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("counter").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+
+      <button style="margin-top: 40px; margin-left:20px " class=" btn marketplace mk" type="button" name="button"> Join whitelist</button>
+
+    </div>
+
+    <div class="slider">
+      <div class="sliderText">
+        <div class="innerslider">
+
+
+          <h3>Mutant Aquatic
+            Warriors Club
+            NFTs</h3>
+          <p>Earn crypto by holding MAWC. We
+            genuinely stick to the mantra of
+            HODL & help you earn up to 20% in
+            the Shardeum (SHM) tokens from
+            the fees generated by our
+            upcoming NFT Marketplace
+            Shardible</p>
+
+          <button style="margin-top: 40px; margin-left:20px " class="btn collectionBtn" type="button" name="button"> View collection</button>
+        </div>
+      </div>
+
+      <!-- /////////////// Slider ////////////// -->
+
+      <style media="screen">
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+        }
+
+        .container {
+          < !-- max-width: 1400px;
+          -->padding: 0 15px;
+          margin: 0 auto;
+          touch-action: auto;
+        }
+
+
+        .cards {
+          display: flex;
+          padding: 25px 0px;
+          list-style: none;
+          overflow-x: scroll;
+          overflow-y: hidden;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 100%;
+          background: #0C0C31;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+          scroll-snap-align: start;
+          transition: all 0.2s;
+          max-width: 250px;
+          width: 250px;
+          height: 400px;
+          align-items: flex-start;
+        }
+
+        .card>div>img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .card .card-title {
+          font-size: 18px;
+          text-align: left;
+          color: white;
+          margin-bottom: 5px
+        }
+
+        .sliderprofile {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .sliderprofile>img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50px
+        }
+
+        .sliderprofile>p {
+          font-size: 16px;
+          font-weight: 400;
+          margin-left: 10px;
+          padding-top: 4px
+        }
+
+        .sliderprice {
+          margin-top: 30px;
+          text-align: left;
+        }
+
+        .sliderprice>p {
+          color: #9D9DE7
+        }
+
+        .sliderprice>h6 {
+          font-size: 16px;
+          position: relative;
+          top: -10px;
+        }
+
+        .sliderbid {
+          text-align: right;
+          position: relative;
+          top: -65px;
+        }
+
+        .sliderbid>p {
+          color: #9D9DE7;
+        }
+
+        .sliderbid>h6 {
+          font-size: 16px;
+          position: relative;
+          top: -12px
+        }
+
+        .card:not(:last-child) {
+          margin-right: 10px;
+        }
+
+
+        .card .card-link-wrapper {
+          margin-top: auto;
+          touch-action: auto;
+        }
+
+        .card .card-link {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          background: var(--red);
+          padding: 6px 12px;
+          border-radius: 8px;
+          transition: background 0.2s;
+          touch-action: auto;
+        }
+
+        .cards::-webkit-scrollbar {
+          height: 0px;
+        }
+
+        .ms-touch.slider {
+          overflow-x: scroll;
+          overflow-y: hidden;
+          touch-action: auto;
+          -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+        }
+
+        @media (min-width: 500px) {
+          .card {
+            flex-basis: calc(50% - 10px);
+          }
+
+          .card:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+
+        @media (min-width: 700px) {
+          .card {
+            flex-basis: calc(calc(100% / 3) - 20px);
+          }
+
+          .card:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
+
+        @media (min-width: 1100px) {
+          .card {
+            flex-basis: calc(25% - 30px);
+          }
+
+          .card:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+      </style>
+
+      <div class="container">
+        <ul class="cards">
+          <li class="card">
+            <div>
+              <img src="img/sliderimg1.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+
+          <li class="card">
+            <div>
+              <img src="img/sliderimg2.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg3.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg4.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg5.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg6.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg7.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg8.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg9.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <img src="img/sliderimg10.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+      <script type="text/javascript">
+        const slider = document.querySelector(".cards");
+        slider.addEventListener("mousedown", e => {});
+        slider.addEventListener("mouseleave", () => {});
+        slider.addEventListener("mouseup", () => {});
+        slider.addEventListener("mousemove", e => {});
+
+
+        let isDown = false;
+
+        slider.addEventListener("mousedown", e => {
+          isDown = true;
+        });
+        slider.addEventListener("mouseleave", () => {
+          isDown = false;
+        });
+        slider.addEventListener("mouseup", () => {
+          isDown = false;
+        });
+        slider.addEventListener("mousemove", e => {
+          console.log(isDown);
+          console.log("Do work here!");
+        });
+
+
+        slider.addEventListener("mousemove", e => {
+          if (!isDown) return;
+        });
+
+        let startX;
+
+        slider.addEventListener("mousedown", e => {
+          isDown = true;
+          slider.classList.add("active");
+
+          pageX = e.pageX;
+          startX = pageX - slider.offsetLeft;
+          console.log(startX);
+
+        });
+
+
+        let scrollLeft;
+
+        slider.addEventListener("mousedown", e => {
+          isDown = true;
+          slider.classList.add("active");
+
+          pageX = e.pageX;
+          startX = pageX - slider.offsetLeft;
+
+          scrollLeft = slider.scrollLeft;
+        });
+
+
+        slider.addEventListener("mousemove", e => {
+          if (!isDown) return;
+
+          e.preventDefault(); //stop any weird stuff
+          const x = e.pageX - slider.offsetLeft;
+          console.log(x, startX);
+        });
+
+        slider.addEventListener("mousemove", e => {
+          if (!isDown) return;
+
+          e.preventDefault(); //stop any weird stuff
+          const x = e.pageX - slider.offsetLeft;
+
+          const deviation = x - startX;
+          console.log({
+            deviation
+          });
+          slider.scrollLeft = scrollLeft - deviation;
+
+        });
+      </script>
+
+
+    </div>
+
+
+
+    <div class="aboutgrid">
+
+
+      <h3>About Shardible</h3>
+      <div class="about">
+        <div class="flex-1">
+          <img src="img/icon1.png" alt="">
+          <h4>P2P Marketplace</h4>
+          <p>Shardible is a modern decentralized NFT
+            marketplace where people can easily buy
+            and sell any NFT tokens. Our team
+            implements all smart contracts with a passion
+            for safety and a decentralization spirit. All
+            listings, bids and transfers occur on our
+            unique smart contract on a chain so users can
+            be sure that their funds and NFTs are safe
+            and secure.</p>
+        </div>
+        <div class="flex-2">
+          <img src="img/icon2.png" alt="">
+          <h4>SaaS for NFT Projects</h4>
+          <p>NFT smart contract factory, minting and
+            token gating are just a part of Shardible. The
+            platform provides comprehensive
+            functionality and a set of tools which help
+            creators, artists, and developers start their
+            NFT projects. Our mission is to simplify NFT
+            creation and enable it for everyone,</p>
+        </div>
+        <div class="flex-3">
+          <img src="img/icon3.png" alt="">
+          <h4>NFT Primary Market </h4>
+          <p>NFT smart contract factory, minting and
+            token gating are just a part of Shardible. The
+            platform provides comprehensive
+            functionality and a set of tools which help
+            creators, artists, and developers start their
+            NFT projects. Our mission is to simplify NFT
+            creation and enable it for everyone,</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- //////////////////////// -->
+
+    <div class="feturesection">
+      <h2>Features</h2>
+      <div class="sectionimg">
+        <div class="inside-items">
+
+          <div class="insdeitem2">
+            <span>NFT Auction</span>
+            <span>NFT Staking</span>
+            <span>Custom NFT Store</span>
+          </div>
+
+          <div class="insdeitem1">
+            <span style="margin-top:-30px;">Stats & Analytics</span>
+            <span style="margin-bottom:-10px;">SDKs/APIs</span>
+          </div>
+
+          <div class="insdeitem3">
+            <span>Mint/List NFTs</span>
+            <span>Buy/Sell NFTs</span>
+            <span>Borrowing/Lending</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <img src="img/features.png" alt=""> -->
+    </div>
+
+
+
+
+    <!-- ///////////RoadMap SEction////////////// -->
+
+    <h2 style="text-align:center; margin-top:50px;">Product Roadmap</h2>
+    <div class="roadmapsection">
+
+
+    <div class="roadmap">
+      <div class="roadmap-item item1">
+        <div class="raodmap-inneritem ">
+          <h4>Phase 1 - Jan 2023</h4>
+          <ul>
+            <li>Create Artwork Mutant Aquatic Warriors Club (MAWC) NFTs</li>
+            <li> Shardible Website Development</li>
+            <li>Community Building</li>
+            <li>Marketing Campaigns</li>
+            <li>Shardible Landing Page Launch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="roadmap-item item2">
+        <div class="raodmap-inneritem">
+          <h4>Phase 1 - Jan 2023</h4>
+          <ul>
+            <li>Create Artwork Mutant Aquatic Warriors Club (MAWC) NFTs</li>
+            <li> Shardible Website Development</li>
+            <li>Community Building</li>
+            <li>Marketing Campaigns</li>
+            <li>Shardible Landing Page Launch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="roadmap-item item3">
+        <div class="raodmap-inneritem">
+          <h4>Phase 1 - Jan 2023</h4>
+          <ul>
+            <li>Create Artwork Mutant Aquatic Warriors Club (MAWC) NFTs</li>
+            <li> Shardible Website Development</li>
+            <li>Community Building</li>
+            <li>Marketing Campaigns</li>
+            <li>Shardible Landing Page Launch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="roadmap-item item4">
+        <div class="raodmap-inneritem">
+          <h4>Phase 1 - Jan 2023</h4>
+          <ul>
+            <li>Create Artwork Mutant Aquatic Warriors Club (MAWC) NFTs</li>
+            <li> Shardible Website Development</li>
+            <li>Community Building</li>
+            <li>Marketing Campaigns</li>
+            <li>Shardible Landing Page Launch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- //////////// Launch Roadmap ////////////// -->
+
+    <div class="launch-roadmap">
+      <h2>Launch Roadmap</h2>
+      <img src="img/launch.png">
+    </div>
+
+
+
+
+    <!-- ////////////////// Partner /////////////////// -->
+
+    <div class="footer">
+      <div class="partners">
+        <h2>Parners</h2>
+        <div class="partners-grid">
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img class="logoimg" src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+          <div class="partners-logo">
+            <img src="img/Shardeum Logo.png">
+            <p>Sharduem</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contact">
+        <h2>Get every news first! Join our community</h2>
+        <div class="socialicons">
+          <a href="#"><img src="img/twitter.png"></a>
+          <a href="#"><img src="img/Discord.png"></a>
+          <a href="#"><img src="img/linkedin.png"></a>
+          <a href="#"><img src="img/Facebook.png"></a>
+          <a href="#"><img src="img/telegram.png"></a>
+          <a href="#"><img src="img/instagram.png"></a>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <div>
+          <div class="copy-item1">
+            <a href="#">Shardible All rights reserved</a>
+          </div>
+          <div class="copy-item2">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+<style media="screen">
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.container {
+max-width: 1400px;
+padding: 0 15px;
+margin: 0 auto;
+touch-action: auto;
+}
+
+
+.cards {
+display: flex;
+padding: 25px 0px;
+list-style: none;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+flex: 0 0 100%;
+background: #0C0C31;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+scroll-snap-align: start;
+transition: all 0.2s;
+max-width: 250px;
+width: 250px;
+height: 400px;
+align-items: flex-start;
+}
+
+.card>div>img{
+  width: 100%;
+  height: 250px;
+}
+
+.card .card-title {
+font-size: 18px;
+text-align: left;
+color: white;
+margin-bottom: 5px
+}
+
+.sliderprofile{
+  display: flex;
+  align-items: flex-start;
+}
+
+.sliderprofile>img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px
+}
+
+.sliderprofile>p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+  padding-top: 4px
+}
+
+.sliderprice{
+  margin-top: 30px;
+  text-align: left;
+}
+
+.sliderprice>p{
+  color: #9D9DE7
+}
+
+.sliderprice>h6{
+  font-size: 16px
+}
+
+.sliderbid{
+  text-align: right;
+  position: relative;
+  top: -35px;
+}
+
+.sliderbid>p{
+  color: #9D9DE7
+}
+
+.sliderbid>h6{
+  font-size: 16px
+}
+
+.card:not(:last-child) {
+margin-right: 10px;
+}
+
+
+.card .card-link-wrapper {
+margin-top: auto;
+touch-action: auto;
+}
+
+.card .card-link {
+display: inline-block;
+text-decoration: none;
+color: white;
+background: var(--red);
+padding: 6px 12px;
+border-radius: 8px;
+transition: background 0.2s;
+touch-action: auto;
+}
+
+.cards::-webkit-scrollbar {
+height: 0px;
+}
+
+.ms-touch.slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  touch-action: auto;
+  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+}
+
+@media (min-width: 500px) {
+.card {
+  flex-basis: calc(50% - 10px);
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
+}
+
+@media (min-width: 700px) {
+.card {
+  flex-basis: calc(calc(100% / 3) - 20px);
+}
+
+.card:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+@media (min-width: 1100px) {
+.card {
+  flex-basis: calc(25% - 30px);
+}
+
+.card:not(:last-child) {
+  margin-right: 40px;
+}
+}
+</style>
+
+
+
+    <div class="container">
+      <ul class="cards">
+        <li class="card">
+          <div>
+            <img src="img/sliderimg1.png" alt="sliderimg1.png">
+            <h5 class="card-title">Krill</h5>
+            <div class="sliderprofile">
+              <img src="img/sliderimg7.png">
+              <p>MAWC</p>
+            </div>
+            <div class="sliderprice">
+              <p>Price</p>
+              <h6>80 SHM</h6>
+            </div>
+            <div class="sliderbid">
+              <p>Highest bid</p>
+              <h6>7.59 wSHM</h6>
+            </div>
+          </div>
+        </li>
+
+          <li class="card">
+            <div>
+              <img src="img/sliderimg2.png" alt="sliderimg1.png">
+              <h5 class="card-title">Krill</h5>
+              <div class="sliderprofile">
+                <img src="img/sliderimg7.png">
+                <p>MAWC</p>
+              </div>
+              <div class="sliderprice">
+                <p>Price</p>
+                <h6>80 SHM</h6>
+              </div>
+              <div class="sliderbid">
+                <p>Highest bid</p>
+                <h6>7.59 wSHM</h6>
+              </div>
+            </div>
+          </li>
+            <li class="card">
+              <div>
+                <img src="img/sliderimg3.png" alt="sliderimg1.png">
+                <h5 class="card-title">Krill</h5>
+                <div class="sliderprofile">
+                  <img src="img/sliderimg7.png">
+                  <p>MAWC</p>
+                </div>
+                <div class="sliderprice">
+                  <p>Price</p>
+                  <h6>80 SHM</h6>
+                </div>
+                <div class="sliderbid">
+                  <p>Highest bid</p>
+                  <h6>7.59 wSHM</h6>
+                </div>
+              </div>
+            </li>
+              <li class="card">
+                <div>
+                  <img src="img/sliderimg4.png" alt="sliderimg1.png">
+                  <h5 class="card-title">Krill</h5>
+                  <div class="sliderprofile">
+                    <img src="img/sliderimg7.png">
+                    <p>MAWC</p>
+                  </div>
+                  <div class="sliderprice">
+                    <p>Price</p>
+                    <h6>80 SHM</h6>
+                  </div>
+                  <div class="sliderbid">
+                    <p>Highest bid</p>
+                    <h6>7.59 wSHM</h6>
+                  </div>
+                </div>
+              </li>
+                <li class="card">
+                  <div>
+                    <img src="img/sliderimg5.png" alt="sliderimg1.png">
+                    <h5 class="card-title">Krill</h5>
+                    <div class="sliderprofile">
+                      <img src="img/sliderimg7.png">
+                      <p>MAWC</p>
+                    </div>
+                    <div class="sliderprice">
+                      <p>Price</p>
+                      <h6>80 SHM</h6>
+                    </div>
+                    <div class="sliderbid">
+                      <p>Highest bid</p>
+                      <h6>7.59 wSHM</h6>
+                    </div>
+                  </div>
+                </li>
+                  <li class="card">
+                    <div>
+                      <img src="img/sliderimg6.png" alt="sliderimg1.png">
+                      <h5 class="card-title">Krill</h5>
+                      <div class="sliderprofile">
+                        <img src="img/sliderimg7.png">
+                        <p>MAWC</p>
+                      </div>
+                      <div class="sliderprice">
+                        <p>Price</p>
+                        <h6>80 SHM</h6>
+                      </div>
+                      <div class="sliderbid">
+                        <p>Highest bid</p>
+                        <h6>7.59 wSHM</h6>
+                      </div>
+                    </div>
+                  </li>
+                    <li class="card">
+                      <div>
+                        <img src="img/sliderimg7.png" alt="sliderimg1.png">
+                        <h5 class="card-title">Krill</h5>
+                        <div class="sliderprofile">
+                          <img src="img/sliderimg7.png">
+                          <p>MAWC</p>
+                        </div>
+                        <div class="sliderprice">
+                          <p>Price</p>
+                          <h6>80 SHM</h6>
+                        </div>
+                        <div class="sliderbid">
+                          <p>Highest bid</p>
+                          <h6>7.59 wSHM</h6>
+                        </div>
+                      </div>
+                    </li>
+                      <li class="card">
+                        <div>
+                          <img src="img/sliderimg8.png" alt="sliderimg1.png">
+                          <h5 class="card-title">Krill</h5>
+                          <div class="sliderprofile">
+                            <img src="img/sliderimg7.png">
+                            <p>MAWC</p>
+                          </div>
+                          <div class="sliderprice">
+                            <p>Price</p>
+                            <h6>80 SHM</h6>
+                          </div>
+                          <div class="sliderbid">
+                            <p>Highest bid</p>
+                            <h6>7.59 wSHM</h6>
+                          </div>
+                        </div>
+                      </li>
+                        <li class="card">
+                          <div>
+                            <img src="img/sliderimg9.png" alt="sliderimg1.png">
+                            <h5 class="card-title">Krill</h5>
+                            <div class="sliderprofile">
+                              <img src="img/sliderimg7.png">
+                              <p>MAWC</p>
+                            </div>
+                            <div class="sliderprice">
+                              <p>Price</p>
+                              <h6>80 SHM</h6>
+                            </div>
+                            <div class="sliderbid">
+                              <p>Highest bid</p>
+                              <h6>7.59 wSHM</h6>
+                            </div>
+                          </div>
+                        </li>
+                          <li class="card">
+                            <div>
+                              <img src="img/sliderimg10.png" alt="sliderimg1.png">
+                              <h5 class="card-title">Krill</h5>
+                              <div class="sliderprofile">
+                                <img src="img/sliderimg7.png">
+                                <p>MAWC</p>
+                              </div>
+                              <div class="sliderprice">
+                                <p>Price</p>
+                                <h6>80 SHM</h6>
+                              </div>
+                              <div class="sliderbid">
+                                <p>Highest bid</p>
+                                <h6>7.59 wSHM</h6>
+                              </div>
+                            </div>
+                          </li>
+
+      </ul>
+    </div>
+
+<script type="text/javascript">
+
+const slider = document.querySelector(".cards");
+slider.addEventListener("mousedown", e => {});
+slider.addEventListener("mouseleave", () => {});
+slider.addEventListener("mouseup", () => {});
+slider.addEventListener("mousemove", e => {});
+
+
+let isDown = false;
+
+slider.addEventListener("mousedown", e => {
+  isDown = true;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+});
+slider.addEventListener("mousemove", e => {
+  console.log(isDown);
+  console.log("Do work here!");
+});
+
+
+slider.addEventListener("mousemove", e => {
+    if (!isDown) return;
+});
+
+let startX;
+
+slider.addEventListener("mousedown", e => {
+  isDown = true;
+  slider.classList.add("active");
+
+  pageX = e.pageX;
+  startX = pageX - slider.offsetLeft;
+  console.log(startX);
+
+});
+
+
+let scrollLeft;
+
+slider.addEventListener("mousedown", e => {
+  isDown = true;
+  slider.classList.add("active");
+
+  pageX = e.pageX;
+  startX = pageX - slider.offsetLeft;
+
+  scrollLeft = slider.scrollLeft;
+});
+
+
+slider.addEventListener("mousemove", e => {
+  if (!isDown) return;
+
+  e.preventDefault(); //stop any weird stuff
+  const x = e.pageX - slider.offsetLeft;
+  console.log(x, startX);
+});
+
+slider.addEventListener("mousemove", e => {
+  if (!isDown) return;
+
+  e.preventDefault(); //stop any weird stuff
+  const x = e.pageX - slider.offsetLeft;
+
+  const deviation = x - startX;
+  console.log({ deviation });
+  slider.scrollLeft = scrollLeft - deviation;
+
+});
+
+
+
+</script>
+
+  </body>
+</html>
