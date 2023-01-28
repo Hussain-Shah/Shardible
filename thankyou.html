@@ -1,0 +1,257 @@
+
+<div class="no_foot media_all_12333">
+<!doctype html>
+<html lang="en" ng-app="rilind">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#272F34" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-16x16.png">
+
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/build.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/1app.min.css">
+<link rel="stylesheet" type="text/css" href="css/app.min.css">
+
+<link rel="stylesheet" href="css/bottom_contact_css.css">
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/angular-sanitize.js"></script>
+<script src="js/angular/moment.min.js"></script>
+<script src="js/angular/aos.js"></script>
+<script src="js/angular/base.min.js"></script>
+<script src="js/angular/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+<style media="screen">
+        .bg-init,
+        .animsition-overlay-slide {
+            z-index: 999999999009 !important;
+            background-color: #9442fe !important;
+            display: block;
+            background-image: url('img/logo background.jpg');
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-init" ng-controller="HeaderCtrl">
+<div class="header">
+<div id="menu" class="mobile-d-n">
+<a href="./home.html"><img src="img/studio/logo-03.png" alt="" class="logoja"></a>
+<div id="menu_lines" class="midnightHeader default">
+<span></span>
+<span></span>
+</div>
+
+<div id="logo">
+  <a href="./home.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+    <h5>Work</h5>
+  </a>
+  <a href="./studio.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+    <h5>Studio</h5>
+  </a>
+  <a href="./services.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+    <h5>Services</h5>
+  </a>
+  <div class="button_collapse_navi">
+    <div class="las_line"></div>
+    <div class="las_line"></div>
+  </div>
+  <div style="position:relative; display: none;" id="open_nav">
+    <a href="./webdevelopment.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+      <p>Web Development</p>
+    </a>
+    <a href="./appdevelopment.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+      <p>App Development</p>
+    </a>
+    <a href="./digitalmarkiting.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+      <p>Digital Marketing</p>
+    </a>
+  </div>
+  <a href="./contact.html" data-animsition-out-class="overlay-slide-out-left" class="animsition-link">
+    <h5>Contact</h5>
+  </a>
+
+</div>
+
+</div>
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark desktop-d-n mobile_navigation_bar">
+
+  <a href="./home.html" class="navbar-brand"><img src="img/logo-03.png" alt="" srcset=""></a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+<div id="nav-icon1">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav coll_mobile_nav">
+    <li class="nav-item">
+      <a class="nav-link animsition-link" href="./home.html">work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link animsition-link" href="./studio.html">Studio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link animsition-link" href="./services.html">services</a>
+    </li>
+    <li class="nav-item inner_class_tab_tag">
+      <a class="nav-link animsition-link" href="./webdevelopment.html">Web Development</a>
+    </li>
+    <li class="nav-item inner_class_tab_tag">
+      <a class="nav-link animsition-link" href="./appdevelopment.html">App Development</a>
+    </li>
+    <li class="nav-item inner_class_tab_tag">
+      <a class="nav-link animsition-link" href="./digitalmarkiting.html">Digital Marketing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link animsition-link" href="./contact.html">Contact</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
+</div>
+<div>
+<style>
+    .exceptthankyoupage {
+      visibility: hidden;
+    }
+
+    body {
+      background: #2A2E3A;
+    }
+
+    .media_all_12333 .inner_popup_services {
+      display: none !important;
+    }
+
+    .body_of_thankyou {
+      background-image: url('img/thank you/backgroundiqwe.png');
+      padding: 14% 10px;
+      height: auto;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .body_of_thankyou .row {
+      display: block;
+    }
+
+    .body_of_thankyou img {
+      width: 17%;
+      margin-bottom: 20px;
+    }
+
+    .body_of_thankyou {
+      text-align: center;
+      color: white;
+    }
+
+    .body_of_thankyou h1 {
+      font-family: Poppins-bold;
+      color: white;
+      font-size: 60px;
+      letter-spacing: -2px;
+    }
+
+    .body_of_thankyou p {
+      font-size: 18px;
+    }
+
+    /*	MOBILE 	*/
+    /*Only in desktop*/
+    @media  only screen and (min-width: 1000px) {
+      .desktop-d-n {
+        display: none;
+      }
+    }
+
+    /*Only on Mobile*/
+    @media  only screen and (max-width: 1000px) {
+      .mobile-d-n {
+        display: none;
+      }
+
+      .body_of_thankyou {
+        padding-top: 43%;
+      }
+
+      .body_of_thankyou img {
+        width: 35% !important;
+      }
+    }
+  </style>
+<div class="animsition-overlay">
+<section class="body_of_thankyou">
+<div class="container">
+<div class="row">
+<img src="img/thank you/check.svg" data-aos="zoom-in-up" data-aos-delay="150">
+<h1 data-aos="zoom-in-up" data-aos-delay="150">Thank You!</h1>
+<p data-aos="zoom-in-up" data-aos-delay="150">We will contact you shortly, but in the meantime, take<br> a
+look at our amazing work.</p>
+<a href="./home.html"><button class="button_submit_a" data-aos="zoom-in-up"
+              data-aos-delay="150">Portfolio</button></a>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+
+<span class="no_foot_spec">
+<footer class="footer_main footer_general">
+<div class="container">
+<div class="row footer_row_contact_1">
+<ul class="mobile-d-n">
+<li><img src="img/studio/logo-05.jpeg" alt=""></li>
+</ul>
+<ul>
+
+<li><a href="./home.html">work</a></li>
+<li><a href="./studio.html">studio</a></li>
+<li><a href="./services.html">services</a></li>
+<li><a href="./webdevelopment.html">web development</a></li>
+<li><a href="./appdevelopment.html">app development</a></li>
+<li><a href="./digitalmarkiting.html">digital marketing</a></li>
+<li><a href="./contact.html">contact</a></li>
+</ul>
+<ul>
+<li><a>Email us here </a></li>
+<li><a href="mailto:info.infiniti.dev@gmail.com" style="text-transform:lowercase"><span>info.infiniti.dev@gmail.com</span></a></li>
+</ul>
+<ul>
+<li>
+<a href="https://goo.gl/maps/FiPUGZf1cjEhPWm59" target="_blank">P389+GWG, Block F G 7/3, Blue Area, Islamabad,<br>
+   Islamabad Capital Territory
+
+</a>
+</li>
+</ul>
+<ul>
+<li><a href="https://instagram.com/syed_h_a_naqvi?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+<li><a href="https://www.facebook.com/profile.php?id=100012656712549&mibextid=LQQJ4d">Facebook</a></li>
+<li><a href="https://www.linkedin.com/company/infiniti-dev/">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</footer> </span>
+
+</body>
+<script src="js/home.min.js"></script>
+<script src="js/angular/counting.js"></script>
+</html>
