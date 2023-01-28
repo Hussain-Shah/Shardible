@@ -1,0 +1,157 @@
+@font-face {
+    font-family: SF-UI-Display-Regular;
+    src: url(fonts/SF-UI-Display-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: sf-ui-display-bold;
+    src: url(fonts/sf-ui-display-bold.otf) format("opentype");
+}
+
+.special_contact_all_p {
+    background-color: #3A345E;
+}
+
+.special_contact_all_p .row {
+    align-items: center;
+}
+
+.special_contact_all_p .col-md-6:nth-child(1) {
+    padding: 0px;
+}
+
+.special_contact_all_p .col-md-6:nth-child(1) img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.special_contact_all_p .col-md-6:nth-child(2) {
+    padding: 70px;
+    color: white;
+}
+
+.special_contact_all_p .col-md-6:nth-child(2) h4 {
+    font-size: 60px;
+    line-height: 55px;
+    margin-bottom: 30px;
+    font-family: 'sf-ui-display-bold';
+    letter-spacing: -2px;
+}
+
+.special_contact_all_p .col-md-6:nth-child(2) h6 {
+    font-family: 'SF-UI-Display-Regular';
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.special_contact_all_p .form_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.special_contact_all_p .form_holder input,
+.special_contact_all_p .form_holder select {
+    width: 47%;
+    height: 55px;
+    border: none;
+    border-bottom: solid 2px #ffffff63;
+    background: transparent;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    transition: ease all 0.2s;
+}
+
+.special_contact_all_p .form_holder select {
+    text-transform: uppercase;
+}
+
+.special_contact_all_p .form_holder option {
+    color: black;
+}
+
+.special_contact_all_p .form_holder input:active,
+.special_contact_all_p .form_holder input:focus,
+.special_contact_all_p .form_holder select:active,
+.special_contact_all_p .form_holder select:focus {
+    outline: none !important;
+    border-bottom: solid 2px red;
+    transition: ease all 0.2s;
+}
+
+.special_contact_all_p .form_holder input::placeholder {
+    color: white;
+    text-transform: uppercase;
+}
+
+.special_contact_all_p .form_holder select::placeholder {
+    color: white;
+    text-transform: uppercase;
+}
+
+.special_contact_all_p input.full_width,
+.special_contact_all_p select.full_width {
+    width: 100%;
+}
+
+.special_contact_all_p input.submit_all_p_button {
+    background: #9442fe !important;
+    padding: 0px !important;
+    margin-top: 10px;
+    border: none !important;
+    color: #fff !important;
+    cursor: pointer;
+    border-bottom: none !important;
+    transition: ease all .3s;
+    text-transform: capitalize;
+    font-family: 'SF-UI-Display-Regular';
+    font-size: 15px !important;
+    transition: ease all 0.3s !important;
+    width: 140px !important;
+}
+
+.special_contact_all_p input.submit_all_p_button:hover {
+    opacity: 0.8;
+    transition: ease all 0.3s;
+}
+
+
+
+.slim_select_box_top_inner {
+    background: 0 0;
+    border: none;
+    border-bottom: 2px #fff solid;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+.slim_select_box_top_inner:active, .slim_select_box_top_inner:focus {
+    outline:none !important;
+}
+
+.slim_select_box_top_inner option {
+    color: black !important;
+}
+
+/*Only in desktop*/
+@media only screen and (min-width: 1000px) {
+    .desktop-d-n {
+        display: none;
+    }
+}
+
+
+/*Only on Mobile*/
+@media only screen and (max-width: 1000px) {
+    .mobile-d-n {
+        display: none !important;
+    }
+
+    .special_contact_all_p .col-md-6:nth-child(2) {
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,85 @@
+.clutch_holder img {
+  height: 135px
+}
+
+.clutch_holder {
+  display: flex;
+  width: 60%;
+  text-align: center;
+  justify-content: space-between
+}
+
+.overlay .title_main {
+  line-height: 110px
+}
+
+.we_craft_a h2 {
+  font-family: SF-UI-Display-Regular;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bolder
+}
+
+.whatsapp_holders {
+  display: none
+}
+
+.whatsapp_holder {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.whatsapp_holder img {
+  width: 50px
+}
+
+.whatsapp_holder p {
+  transform: rotate(-90deg) translate(80px, 0);
+  font-weight: bolder;
+  color: #fe9c20;
+  mix-blend-mode: difference;
+  margin-bottom: 0
+}
+
+.whatsapp_holder p a {
+  color: #000;
+  font-size: 17px
+}
+
+@media only screen and (min-width:1000px) {
+  .desktop-d-n, .whatsapp_holders {
+    display: none !important
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .mobile-d-n {
+    display: none !important
+  }
+
+  .overlay .title_main {
+    font-size: 70px;
+    line-height: 65px
+  }
+
+  .clutch_holder {
+    display: flex;
+    width: 100%
+  }
+
+  .overlay {
+    height: 90vh !important
+  }
+
+  .overlayndtwo {
+    height: 12vh !important
+  }
+
+  .inner_class_tab_tag a {
+    font-size: 24px !important
+  }
+}
